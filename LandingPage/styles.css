@@ -141,22 +141,37 @@
   font-size: 1rem;
 }
 .hero {
-  margin-top: 50px;
+  height: 45vh;
+  overflow: hidden;
+  display: relative;
 }
-
+.hero-img {
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.overlay {
+  display: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid red;
+  height: 100%;
+  width: 100vw;
+}
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
 }
-
 .hero p {
   font-size: 1.2rem;
 }
-
 .hero-buttons {
   margin-top: 20px;
 }
-
 .btn {
   background: #fff;
   color: #ff7e5f;
