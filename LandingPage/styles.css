@@ -1,0 +1,189 @@
+/* styles.css */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* utils */
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+  display: flex;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.py-4 {
+  padding: 1rem 0;
+}
+.px-4 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding-inline: 8px;
+}
+.p-4 {
+  padding: 0;
+}
+.my-4 {
+  margin: 1rem 0;
+}
+.mx-4 {
+  margin: 0 1rem;
+}
+.m-4 {
+  margin: 1rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-3 {
+  gap: 12px;
+}
+.border {
+  border: 1px solid white;
+}
+.border-x {
+  border-inline: 1px solid white;
+}
+
+.border-black {
+  border-color: black;
+}
+.w-fit {
+  width: fit-content;
+}
+
+/* dedicated */
+.top-header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+.top-header * {
+  color: white;
+}
+.top-header > div {
+  width: 50%;
+  margin-inline: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  color: white;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-header {
+  background: transparent;
+  padding: 3px 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border-color: white;
+  margin: 4px 0;
+}
+
+.hero {
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background: #fff;
+  color: #ff7e5f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.features {
+  background: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.feature-item {
+  margin: 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.about-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.service-item {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
